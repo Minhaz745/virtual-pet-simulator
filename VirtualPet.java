@@ -5,15 +5,13 @@ public class VirtualPet {
     private int happiness;
     private int energy;
 
-    // Constructor
+    
     public VirtualPet(String name) {
         this.name = name;
         this.hunger = 50;
         this.happiness = 50;
-        this.energy = 50;
-    }
-
-    // Methods to interact with the pet
+        this.energy = 5 
+            
     public void feed() {
         if (hunger > 0) {
             hunger -= 10;
@@ -47,7 +45,7 @@ public class VirtualPet {
         System.out.println("Energy: " + energy + "/100");
     }
 
-    // Method to handle pet's mood changes over time
+    
     public void timePasses() {
         hunger += 5;
         happiness -= 5;
